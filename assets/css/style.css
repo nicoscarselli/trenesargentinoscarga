@@ -68,6 +68,8 @@
 body {
   font-family: "Roboto", sans-serif !important;
   color: var(--dark) !important;
+  height: auto !important;
+  width: auto !important;
 }
 
 a {
@@ -103,7 +105,7 @@ h6 {
 --------------------------------------------------------------*/
 #topbar {
   background: var(--light-grey);
-  height: 66px;
+  height: 48px;
   font-size: 16px;
   z-index: 996;
 }
@@ -129,6 +131,12 @@ h6 {
   margin-left: 0;
 }
 
+@media (max-width: 768px) {
+  #topbar {
+    display: none !important;
+  }
+}
+
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
@@ -137,8 +145,7 @@ h6 {
   transition: all 0.5s;
   z-index: 997;
   padding: 28px 0;
-  top: 66px;
-  box-shadow: 0px 2px 15px rgba(25, 119, 204, 0.1);
+  top: 48px;
 }
 
 #header.header-scrolled {
@@ -161,25 +168,25 @@ h6 {
   background: var(--dark);
   border-radius: 50px;
   color: #fff;
-  display: inline-block;
-  font-family: var(--font-title);
   font-size: 18px;
-  margin-left: 25px;
-  padding: 8px 25px;
+  padding: 8px 25px !important;
   transition: 0.3s;
-  white-space: nowrap;
 }
 
 .header-btn:hover, .header-btn:focus {
-  background: var(--dark);
-  color: #fff;
+  background: var(--white);
+  color: var(--dark) !important;
 }
 
 
 @media (max-width: 768px) {
+  #header {
+    top: 0;
+    padding: 14px 0;
+  }
+
   .header-btn {
-    margin: 0 15px 0 0;
-    padding: 6px 18px;
+   display: none;
   }
 }
 
@@ -469,8 +476,18 @@ h6 {
 # Sections General
 --------------------------------------------------------------*/
 section {
-  padding: 100px 0 !important; 
+  padding: 50px 0 !important; 
   overflow: hidden !important;
+}
+
+.inner-page {
+  margin-top: 176px;
+}
+
+@media (max-width: 768px) {
+  .inner-page {
+    margin-top: 100px;
+  }
 }
 
 
@@ -543,12 +560,53 @@ section {
 
 
 
+/*--------------------------------------------------------------
+# Breadcrumb
+--------------------------------------------------------------*/
 
+.jumbotron .jumbotron_bar {
+  background: var(--dark) 0% 0% no-repeat padding-box !important;
+  opacity: 0.6;
+}
+
+.jumbotron .jumbotron_bar .breadcrumb {
+  text-shadow: none !important;
+}
+
+.jumbotron .jumbotron_bar .breadcrumb li a {
+  font-size: 16px !important;
+  font-weight: normal !important;
+}
+
+.jumbotron {
+  position: fixed !important;
+  top: 194px;
+}
+
+
+/*--------------------------------------------------------------
+# Cards
+--------------------------------------------------------------*/
+
+.card {
+  border: none !important;
+}
+
+.card-img-overlay {
+  bottom: 16px !important;
+  text-align: center;
+  padding: 16px !important;
+  border-radius: 10px !important;
+}
 
 
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
+footer {
+  border-top: 1px solid var(--light-grey) !important;
+}
+
 #footer {
   color: var(--dark);
   font-size: 16px;

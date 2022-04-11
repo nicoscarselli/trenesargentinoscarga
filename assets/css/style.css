@@ -98,10 +98,23 @@ h6 {
 
 .btn-primary {
   background-color: var(--celeste) !important;
+  font-family: var(--font-title) !important;
 }
 
 .btn:focus {
   border: 1px solid var(--celeste) !important;
+}
+
+.bg-celeste {
+  background-color: var(--celeste);
+}
+
+.bg-grey {
+  background-color: var(--light-grey);
+}
+
+.bg-dark {
+  background-color: var(--dark);
 }
 
 /*--------------------------------------------------------------
@@ -600,6 +613,16 @@ section {
   text-align: center;
   padding: 16px !important;
   border-radius: 10px !important;
+}
+
+
+/*--------------------------------------------------------------
+# Clientes
+--------------------------------------------------------------*/
+
+.owl-carousel .owl-item {
+  border: 1px solid var(--dark-grey);
+  border-radius: 10px;
 }
 
 

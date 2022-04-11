@@ -161,4 +161,27 @@
     }
   });
 
+  /**
+   * Owl Carousel Clientes
+   */
+   $('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:30,
+    dots:true,
+    autoplay:true,
+    autoplayTimeout:1000,
+    autoplayHoverPause:true,
+    responsive:{
+        0:{
+            items:2
+        },
+        600:{
+            items:6
+        },
+        1000:{
+            items:6
+        }
+    }
+});
+
 })()

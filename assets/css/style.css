@@ -149,8 +149,8 @@ h6 {
 }
 
 @media (max-width: 768px) {
-  #topbar {
-    display: none !important;
+  .topbar_phone {
+    display: none;
   }
 }
 
@@ -198,12 +198,13 @@ h6 {
 
 @media (max-width: 768px) {
   #header {
-    top: 0;
-    padding: 14px 0;
+    top: 48px;
+    padding: 16px 0;
   }
 
   .header-btn {
    display: none;
+   position: absolute;
   }
 }
 
@@ -269,7 +270,7 @@ h6 {
 * Mobile Navigation 
 */
 .mobile-nav-toggle {
-  color: #2c4964;
+  color: var(--white);
   font-size: 28px;
   cursor: pointer;
   display: none;
@@ -305,19 +306,19 @@ h6 {
 
 .navbar-mobile .mobile-nav-toggle {
   position: absolute;
-  top: 15px;
+  top: 30px;
   right: 15px;
 }
 
 .navbar-mobile ul {
   display: block;
   position: absolute;
-  top: 55px;
-  right: 15px;
-  bottom: 15px;
-  left: 15px;
-  padding: 10px 0;
-  background-color: #fff;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 48px 0;
+  background-color: var(--celeste);
   overflow-y: auto;
   transition: 0.3s;
 }
@@ -328,9 +329,9 @@ h6 {
 
 .navbar-mobile a,
 .navbar-mobile a:focus {
-  padding: 10px 20px;
-  font-size: 15px;
-  color: #2c4964;
+  padding: 10px 24px;
+  font-size: 24px;
+  color: var(--white);
   border: none;
 }
 
@@ -340,44 +341,6 @@ h6 {
   color: var(--celeste);
 }
 
-.navbar-mobile .getstarted,
-.navbar-mobile .getstarted:focus {
-  margin: 15px;
-}
-
-.navbar-mobile .dropdown ul {
-  position: static;
-  display: none;
-  margin: 10px 20px;
-  padding: 10px 0;
-  z-index: 99;
-  opacity: 1;
-  visibility: visible;
-  background: #fff;
-  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
-}
-
-.navbar-mobile .dropdown ul li {
-  min-width: 200px;
-}
-
-.navbar-mobile .dropdown ul a {
-  padding: 10px 20px;
-}
-
-.navbar-mobile .dropdown ul a i {
-  font-size: 12px;
-}
-
-.navbar-mobile .dropdown ul a:hover,
-.navbar-mobile .dropdown ul .active:hover,
-.navbar-mobile .dropdown ul li:hover>a {
-  color: var(--celeste);
-}
-
-.navbar-mobile .dropdown>.dropdown-active {
-  display: block;
-}
 
 /*--------------------------------------------------------------
 # Hero Section
@@ -455,11 +418,12 @@ h6 {
 
 @media (max-width: 768px) {
   #hero {
-    height: 50vh;
+    margin-top: 152px;
+    height: 350px;
   }
 
   #hero h1 {
-    font-size: 32px;
+    font-size: 28px;
     line-height: 32px;
   }
 }
@@ -578,7 +542,7 @@ section {
 
 
 /*--------------------------------------------------------------
-# Breadcrumb
+# Jumbotron / Novedades
 --------------------------------------------------------------*/
 
 .jumbotron .jumbotron_bar {
@@ -595,9 +559,12 @@ section {
   font-weight: normal !important;
 }
 
-.jumbotron {
-  position: fixed !important;
-  top: 194px;
+.jumboarticle {
+  min-height: 580px !important;
+}
+
+article .overlap {
+  left: 0px !important;
 }
 
 

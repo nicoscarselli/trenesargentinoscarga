@@ -34,8 +34,8 @@
   <div id="topbar" class="d-flex align-items-center fixed-top">
     <div class="container d-flex justify-content-between">
       <div class="contact-info d-flex align-items-center">
-        <i class="fa fa-phone"></i> +54 (11) 6091-8000
-        <i class="fa fa-envelope"></i> <a href="contacto.html">Contactate con nosotros</a>
+        <div class="topbar_phone"><i class="fa fa-phone"></i> +54 (11) 6091-8000</div>
+        <div class="topbar_contact"><i class="fa fa-envelope"></i> <a href="contacto.html">Contactate</a></div>
       </div>
       <div class="contact-info d-flex align-items-center">
         <a href="#" target="_blank" class="pe-4"><i class="fa fa-user-alt"></i> Admin</a>
@@ -60,6 +60,7 @@
     </div>
   </header><!-- End Header -->
 
+  <!-- ======= Hero ======= -->
   <div id="hero" class="d-flex flex-column justify-content-center">
 
     <div class="overlay"></div>
@@ -69,8 +70,8 @@
     </video>
 
     <div class="container h-100">
-      <div class="d-flex h-100 text-center align-items-lg-center align-items-end">
-        <div class="w-100 text-white">
+      <div class="d-flex h-100 text-center align-items-center">
+        <div class="mt-lg-5 mt-0 w-100 text-white">
           <h1 data-aos="zoom-out">Operando con las principales líneas ferroviarias cargueras de Argentina</h1>
           <a href="contacto.html" class="btn-contacto" data-aos="zoom-out" data-aos-delay="200">CONTACTATE CON NOSOTROS</a>
         </div>
@@ -78,63 +79,67 @@
     </div>
 
   </div>
+  <!-- ======= Hero ======= -->
 
-
+  <!-- ======= Main ======= -->
   <main id="main">
-    <!-- ======= About Section ======= -->
-    <section>
+    <!-- ======= Servicios ======= -->
+    <section id="servicios">
       <div class="container">
 
         <div class="row">
-          <div class="row">
-            <!-- Panel -->
-            <div class="col-lg-4 mb-3 mb-lg-0">
-              <div class="panel-hover panel-hover">
-                <a href="mapa.html">
-                  <img src="assets/img/mapa.png" alt="">
-                  <div class="panel-hover-overlay"></div>
-                  <div class="panel-hover-content">
-                    <h3 class="panel-hover-title">Mapa de Cobertura</h3>
-                  </div>
-                </a>
-              </div>
+          <!-- Panel -->
+          <div class="col-lg-4 mb-3 mb-lg-0">
+            <div class="panel-hover panel-hover">
+              <a href="mapa.html">
+                <img src="assets/img/mapa.png" alt="">
+                <div class="panel-hover-overlay"></div>
+                <div class="panel-hover-content">
+                  <h3 class="panel-hover-title">Mapa de Cobertura</h3>
+                </div>
+              </a>
             </div>
-            <!-- Panel -->
-            <div class="col-lg-4">
-              <div class="panel-hover panel-hover"><img src="assets/img/servicios.png" alt="">
-                <a href="servicios.html">
-                  <div class="panel-hover-overlay"></div>
-                  <div class="panel-hover-content">
-                    <h3 class="panel-hover-title">Servicios</h3>
-                  </div>
-                </a>
-              </div>
-            </div>
-            <!-- Panel -->
-            <div class="col-lg-4">
-              <div class="panel-hover panel-hover"><img src="assets/img/clientes.png" alt="">
-                <a href="clientes.html">
-                  <div class="panel-hover-overlay"></div>
-                  <div class="panel-hover-content">
-                    <h3 class="panel-hover-title">Clientes</h3>
-                  </div>
-                </a>
-              </div>
-            </div>
-
           </div>
+          <!-- Panel -->
+          <div class="col-lg-4 mb-3 mb-lg-0">
+            <div class="panel-hover panel-hover"><img src="assets/img/servicios.png" alt="">
+              <a href="servicios.html">
+                <div class="panel-hover-overlay"></div>
+                <div class="panel-hover-content">
+                  <h3 class="panel-hover-title">Servicios</h3>
+                </div>
+              </a>
+            </div>
+          </div>
+          <!-- Panel -->
+          <div class="col-lg-4">
+            <div class="panel-hover panel-hover"><img src="assets/img/clientes.png" alt="">
+              <a href="clientes.html">
+                <div class="panel-hover-overlay"></div>
+                <div class="panel-hover-content">
+                  <h3 class="panel-hover-title">Clientes</h3>
+                </div>
+              </a>
+            </div>
+          </div>
+
         </div>
       </div>
-    </section><!-- End About Section -->
+    </section>
+    <!-- ======= Servicios ======= -->
 
-    <section>
+    <!-- ======= Noticias ======= -->
+    <section id="noticias">
       <div class="container">
 
-        <div class="d-flex justify-content-between">
+        <div class="d-flex justify-content-between align-items-center">
           <h2>Últimas Noticias</h2>
+          <div>
+            <a href="novedades.html"><button class="btn btn-primary"> Ver Más </button></a>
+          </div>
         </div>
 
-        <div class="row">
+        <div class="row panels-row">
           <div class="col-lg-3 col-md-6">
             <a class="panel panel-default panel-md" href="#">
               <div style="background-image:url(assets/img/noticia1.png);" class="panel-heading img"></div>
@@ -173,15 +178,23 @@
             </a>
           </div>
         </div>
-
-        <div>
-          <a href="noticias.html"></a><button class="btn btn-primary"> Ver Más </button></a>
-        </div>
-
       </div>
     </section>
+    <!-- ======= Noticias ======= -->
 
-  </main><!-- End #main -->
+    <!-- ======= Banner Contacto ======= -->
+    <section class="bg-celeste">
+      <div class="container text-center">
+        <a href="contacto.html"><img src="assets/img/icon_contacto.svg" alt="" class="mb-4"></a>
+        <a href="contacto.html">
+          <h2 class="text-white">Contactate con nosotros</h2>
+        </a>
+      </div>
+    </section>
+    <!-- ======= Banner Contacto ======= -->
+
+  </main>
+  <!-- End #main -->
 
   <!-- ======= Footer ======= -->
   <footer id="footer">
@@ -190,7 +203,7 @@
       <div class="container">
         <div class="row">
 
-          <div class="col-lg-2 col-md-6 footer-links">
+          <div class="col-lg-2 col-6 footer-links">
             <ul>
               <li><a href="index.html">Inicio</a></li>
               <li><a href="#">Admin</a></li>
@@ -199,7 +212,7 @@
             </ul>
           </div>
 
-          <div class="col-lg-2 col-md-6 footer-links">
+          <div class="col-lg-2 col-6 footer-links">
             <ul>
               <li><a href="mapa.html">Mapa de cobertura</a></li>
               <li><a href="servicios.html">Servicios</a></li>

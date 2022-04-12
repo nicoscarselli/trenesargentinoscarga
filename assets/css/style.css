@@ -148,6 +148,10 @@ h6 {
   margin-left: 0;
 }
 
+#topbar .topbar_phone {
+  margin-right: 24px
+}
+
 @media (max-width: 768px) {
   .topbar_phone {
     display: none;

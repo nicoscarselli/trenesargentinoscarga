@@ -165,7 +165,7 @@ h6 {
   background: var(--celeste);
   transition: all 0.5s;
   z-index: 997;
-  padding: 28px 0;
+  padding: 20px 0;
   top: 48px;
 }
 
@@ -237,36 +237,61 @@ h6 {
 .navbar>ul>li {
   position: relative;
   white-space: nowrap;
-  padding: 8px 0 8px 20px;
+  padding: 8px 10px 8px 10px;
 }
 
 .navbar a,
 .navbar a:focus {
   align-items: center;
   color: var(--white);
-  display: flex;
   font-family: var(--font-title);
   font-size: 18px;
   justify-content: space-between;
-  padding: 5px 2px;
   text-decoration: none !important;
   text-transform: uppercase;
   transition: 0.3s;
   white-space: nowrap;
+  position: relative;
+  display: block;
+  cursor: pointer;
+  padding: 8px 0;
+  color: #fff;
 }
 
-.navbar a i,
-.navbar a:focus i {
-  font-size: 12px;
-  line-height: 0;
-  margin-left: 5px;
+.navbar a:hover{
+  color: #fff;
+  text-decoration: none;
 }
 
-.navbar a:hover,
-.navbar .active,
-.navbar .active:focus,
-.navbar li:hover>a {
-  color: var(--white);
+.navbar 
+a:before, a:after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: -2px;
+  background: #fff;
+}
+
+.navbar a:before {
+  left: 0;
+}
+.navbar a:after {
+  right: 0;
+  background: #fff;
+  transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+.navbar a:hover:before {
+  background: #fff;
+  width: 100%;
+  transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+.navbar a:hover:after {
+  background: transparent;
+  width: 100%;
+  transition: 0s;
 }
 
 
@@ -503,6 +528,9 @@ section {
   top: 0;
   left: 0;
   transition: all 0.3s;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .panel-hover-content {
@@ -519,19 +547,13 @@ section {
   color: var(--white) !important;
 }
 
-.panel-hover img {
-  width: auto;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
 
 .panel-hover .panel-hover-overlay {
   background: rgba(0, 0, 0, 0.5);
 }
 
 .panel-hover:hover img {
-  width: 100%;
+  width: 120%;
 }
 
 .panel-hover:hover::after {
@@ -540,7 +562,7 @@ section {
 }
 
 .panel-hover:hover .panel-hover-overlay {
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.5);
 }
 
 @media (max-width: 1200px) {

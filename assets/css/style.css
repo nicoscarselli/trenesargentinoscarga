@@ -116,6 +116,7 @@ h6 {
   font-family: var(--font-title) !important;
   font-weight: bold !important;
   letter-spacing: -1px;
+  margin: 0.4em 0 0.4em 0 !important;
 }
 
 h1, h2 {
@@ -127,7 +128,8 @@ h1, h2 {
 }
 
 hr {
-  border: 1px solid var(--dark);
+  border: .5px solid var(--dark) !important;
+  margin: 24px 0 !important;
 }
 
 .btn {
@@ -318,9 +320,10 @@ a:before, a:after {
   content: '';
   position: absolute;
   width: 0%;
-  height: 2px;
-  bottom: -2px;
-  background: #fff;
+  height: 6px;
+  bottom: -36px;
+  background: var(--dark);
+  border-radius: 100px;
 }
 
 .navbar a:before {
@@ -328,14 +331,14 @@ a:before, a:after {
 }
 .navbar a:after {
   right: 0;
-  background: #fff;
-  transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
+  background: var(--dark);
+  transition: width 0.3s cubic-bezier(0.22, 0.61, 0.36, 1);
 }
 
 .navbar a:hover:before {
-  background: #fff;
+  background: var(--dark);
   width: 100%;
-  transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+  transition: width 0.3s cubic-bezier(0.22, 0.61, 0.36, 1);
 }
 
 .navbar a:hover:after {
@@ -428,7 +431,7 @@ a:before, a:after {
   width: 100%;
   height: 100vh;
   position: relative;
-  background-color: black;
+  background-color: var(--dark);
   overflow: hidden;
 }
 
@@ -454,7 +457,7 @@ a:before, a:after {
   height: 100%;
   width: 100%;
   background-color: var(--dark);
-  opacity: 0.4;
+  opacity: 0.3;
   z-index: 1;
 }
 
@@ -465,30 +468,31 @@ a:before, a:after {
 }
 
 #hero .btn-contacto {
-  font-family: var(--font-title);
-  text-transform: uppercase;
-  font-size: 18px;
-  display: inline-block;
-  padding: 12px 35px;
-  margin-top: 30px;
-  border-radius: 50px;
-  transition: 0.5s;
-  color: var(--white);
   background: var(--celeste);
+  border-radius: 50px;
+  color: var(--white);
+  display: inline-block;
+  font-family: var(--font-title);
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 30px;
+  padding: 16px 36px;
+  text-transform: uppercase;
+  transition: 0.5s;
 }
 
 #hero .btn-contacto:hover {
-  background: var(--celeste);
-  transform: scale(1.15);
+  background: var(--dark);
   box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+  transform: scale(1.15);
 }
 
 #hero h1 {
   margin: 0 0 10px 0;
-  font-size: 48px;
-  font-weight: 700;
-  line-height: 56px;
+  font-size: 3.2rem;
+  line-height: 1.1;
   color: var(--white);
+  text-transform:none;
 }
 
 @media (min-width: 1024px) {
@@ -543,7 +547,7 @@ section {
 }
 
 .inner-page {
-  margin-top: 176px;
+  margin-top: 150px;
 }
 
 @media (max-width: 768px) {
@@ -601,11 +605,11 @@ section {
 }
 
 .panel-hover .panel-hover-overlay {
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(80, 83, 92, 0.5);
 }
 
 .panel-hover:hover img {
-  width: 120%;
+  width: 150%;
 }
 
 .panel-hover:hover::after {
@@ -614,7 +618,7 @@ section {
 }
 
 .panel-hover:hover .panel-hover-overlay {
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(80, 83, 92, 0.5);
 }
 
 a.panel {

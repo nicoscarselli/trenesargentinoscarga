@@ -1,4 +1,28 @@
 @font-face {
+  font-family: 'Gotham';
+  src: url('../fonts/Gotham-Book.eot');
+  src: url('../fonts/Gotham-Book.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/Gotham-Book.woff2') format('woff2'),
+      url('../fonts/Gotham-Book.woff') format('woff'),
+      url('../fonts/Gotham-Book.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Gotham';
+  src: url('../fonts/Gotham-Bold.eot');
+  src: url('../fonts/Gotham-Bold.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/Gotham-Bold.woff2') format('woff2'),
+      url('../fonts/Gotham-Bold.woff') format('woff'),
+      url('../fonts/Gotham-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
   font-family: 'Roboto';
   src: url('../fonts/Roboto-Regular.eot');
   src: url('../fonts/Roboto-Regular.eot?#iefix') format('embedded-opentype'),
@@ -46,8 +70,8 @@
   --dark-grey: #aaaaaa;
   --light-grey: #e7e7e7;
   --celeste: #37bbed;
-  --font-title: 'Encode Sans';
-  --font-text: 'Roboto';
+  --font-title: 'Gotham';
+  --font-text: 'Gotham';
   scroll-behavior: smooth;
 }
 
@@ -66,7 +90,8 @@
 }
 
 body {
-  font-family: "Roboto", sans-serif !important;
+  font-family: var(--font-text) !important;
+  font-weight: normal;
   color: var(--dark) !important;
   height: auto !important;
   width: auto !important;
@@ -88,21 +113,46 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Encode Sans", sans-serif !important;
+  font-family: var(--font-title) !important;
   font-weight: bold !important;
+  letter-spacing: -1px;
+}
+
+h1, h2 {
+  text-transform: uppercase;
 }
 
 .font-normal{
   font-weight: normal !important;
 }
 
-.btn-primary {
-  background-color: var(--celeste) !important;
-  font-family: var(--font-title) !important;
+hr {
+  border: 1px solid var(--dark);
+}
+
+.btn {
+  border: none !important;
+  font-weight: normal !important;
+  margin-bottom: 8px !important;
+  padding: 12px 24px !important;
+  text-transform: uppercase !important;
 }
 
 .btn:focus {
   border: 1px solid var(--celeste) !important;
+}
+
+.btn-primary {
+  background-color: var(--celeste) !important;
+  font-family: var(--font-title) !important;
+  transition: 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: var(--dark) !important;
+  color: var(--white) !important;
+  transform: scale(1.03);
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 12px 20px -20px;
 }
 
 .bg-celeste {
@@ -165,7 +215,7 @@ h6 {
   background: var(--celeste);
   transition: all 0.5s;
   z-index: 997;
-  padding: 20px 0;
+  padding: 14px 0;
   top: 48px;
 }
 
@@ -188,7 +238,7 @@ h6 {
 .header-btn {
   background: var(--dark);
   border-radius: 50px;
-  color: #fff;
+  color: var(--white);
   font-size: 18px;
   padding: 8px 25px !important;
   transition: 0.3s;
@@ -237,7 +287,7 @@ h6 {
 .navbar>ul>li {
   position: relative;
   white-space: nowrap;
-  padding: 8px 10px 8px 10px;
+  padding: 12px;
 }
 
 .navbar a,
@@ -246,6 +296,7 @@ h6 {
   color: var(--white);
   font-family: var(--font-title);
   font-size: 18px;
+  font-weight: bold;
   justify-content: space-between;
   text-decoration: none !important;
   text-transform: uppercase;
@@ -255,11 +306,10 @@ h6 {
   display: block;
   cursor: pointer;
   padding: 8px 0;
-  color: #fff;
 }
 
 .navbar a:hover{
-  color: #fff;
+  color: var(--white);
   text-decoration: none;
 }
 
@@ -308,7 +358,7 @@ a:before, a:after {
 }
 
 .mobile-nav-toggle.bi-x {
-  color: #fff;
+  color: var(--white);
 }
 
 @media (max-width: 991px) {
@@ -423,12 +473,14 @@ a:before, a:after {
   margin-top: 30px;
   border-radius: 50px;
   transition: 0.5s;
-  color: #fff;
+  color: var(--white);
   background: var(--celeste);
 }
 
 #hero .btn-contacto:hover {
   background: var(--celeste);
+  transform: scale(1.15);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
 }
 
 #hero h1 {
@@ -509,7 +561,8 @@ section {
   position: relative;
   padding-bottom: 60%;
   border-radius: 10px;
-  height: 400px;
+  height: 300px;
+  transition: .3s;
 }
 
 .panel-hover-overlay {
@@ -547,7 +600,6 @@ section {
   color: var(--white) !important;
 }
 
-
 .panel-hover .panel-hover-overlay {
   background: rgba(0, 0, 0, 0.5);
 }
@@ -563,6 +615,25 @@ section {
 
 .panel-hover:hover .panel-hover-overlay {
   background: rgba(0, 0, 0, 0.5);
+}
+
+a.panel {
+  transition: .3s !important;
+}
+
+a.panel .panel-heading {
+  transition:  opacity 1s !important;
+}
+
+a.panel:focus, a.panel:hover {
+  background: var(--white) !important;
+  color: var(--dark) !important;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+  transform: scale(1.02);
+}
+
+.text-muted, time {
+  color: var(--dark-grey) !important;
 }
 
 @media (max-width: 1200px) {
@@ -638,7 +709,7 @@ footer {
 }
 
 #footer .footer-top {
-  padding: 60px 0 30px 0;
+  padding: 50px 0 0px 0;
   background: var(--light-grey);
 }
 

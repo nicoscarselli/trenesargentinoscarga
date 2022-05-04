@@ -47,105 +47,165 @@
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top">
     <div class="container d-flex align-items-center">
-      <h1 class="logo me-auto"><a href="index.html"><img src="assets/img/logo.svg" alt=""></a></h1>
+      <div class="logo me-auto"><a href="index.html"><img src="assets/img/logo.svg" alt=""></a></div>
       <nav id="navbar" class="navbar order-last order-lg-0">
         <ul>
           <li><a class="nav-link" href="mapa.html">MAPA DE COBERTURA</a></li>
           <li><a class="nav-link" href="servicios.html">SERVICIOS</a></li>
           <li><a class="nav-link" href="clientes.html">CLIENTES</a></li>
           <li><a class="nav-link" href="novedades.html">NOVEDADES</a></li>
-          <li><a class="header-btn" href="https://sigasucarga.bcyl.com.ar/" target="_blank">ACCESO CLIENTES</a></li>
         </ul>
         <i class="fa-solid fa-bars mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
+      <a href="https://sigasucarga.bcyl.com.ar/" class="clientes-btn" target="_blank">ACCESO CLIENTE</a>
     </div>
   </header><!-- End Header -->
-  <!-- End Header -->
   
   <!-- #main -->
-  <main id="main" class="inner-page">
+  <main id="main">
+
+    <!-- Top Imagen -->
+    <div class="jumbotron jumboarticle justify-content-center align-items-center h-100" style="background-image:url(assets/img/noticia1.png);">
+      <div class="overlay"></div>
+      <div class="container jumbotron-container">
+        <h1>Productos que Transportamos</h1>
+      </div>
+    </div>
+    <!-- Top Imagen -->
+
     <section id="productos">
       <div class="container">
-        <h1>Productos que transportamos</h1>
-        <hr>
-        
-        <div class="row">
-          <div class="col-lg-4 col-md-6 mb-5">
-            <div class="card text-white mb-3">
+        <div class="row row-cols-1">
+          <div class="col-lg-6 col-md-6 mb-5">
+            <div class="card text-white">
               <img src="assets/img/productos/agricolas.png">
               <div class="card-img-overlay d-flex flex-column">
-                <h4 class="card-title mt-auto">Agricola</h4>
+                <h2 class="mt-auto">Agricola</h2>
+                <h5>Trigo, Maíz, Soja, Girasol (precio aforado), Cebada, Sorgo, Harinas, Pellets, Aceites.</h5>
               </div>
             </div>
-            <p>Trigo, Maíz, Soja, Girasol (precio aforado), Cebada, Sorgo, Harinas, Pellets, Aceites.</p>
-            <p><b>Vagón:</b> Granero o Tanque (para aceites).</p>
-            <img src="assets/img/productos/graneros.png" alt="" class="img-fluid my-4">
-            <a href="assets/pdf_vagones/agricolas.pdf" target="_blank"><button class="btn btn-primary">Más información</button></a>
+            <div class="card-box">
+              <img src="assets/img/productos/graneros.png" alt="" class="img-fluid my-4">
+              <div class="row justify-content-between align-items-center">
+                <div class="col-auto me-auto">
+                  <h5>Vagón:</h5>
+                  <p>Granero o Tanque (para aceites).</p>
+                </div>
+                <div class="col-auto">
+                  <a href="assets/pdf_vagones/agricolas.pdf" target="_blank" class="d-block"><button class="btn btn-primary">Más info</button></a>
+                </div>
+              </div>
+            </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 mb-5">
-            <div class="card text-white mb-3">
+          <div class="col-lg-6 col-md-6 mb-5">
+            <div class="card text-white">
               <img src="assets/img/productos/aridos.png">
               <div class="card-img-overlay d-flex flex-column">
-                <h4 class="card-title mt-auto">Aridos</h4>
+                <h2 class="mt-auto">Aridos</h2>
+                <h5>Fundente, Piedras, Clinker, Arenas Carbón uso industrial.</h5>
               </div>
             </div>
-            <p>Fundente, Piedras, Clinker, Arenas Carbón uso industrial.</p>
-            <p><b>Vagón:</b> Tolva Minera, Multipropósito, Borde Alto.</p>
-            <img src="assets/img/productos/tolvas-mineras.png" alt="" class="img-fluid my-4">
-            <a href="assets/pdf_vagones/aridos.pdf" target="_blank"><button class="btn btn-primary">Más información</button></a>
+            <div class="card card-box">
+              <img src="assets/img/productos/tolvas-mineras.png" alt="" class="img-fluid my-4">
+              <div class="row justify-content-between align-items-center">
+                <div class="col-auto me-auto">
+                  <h5>Vagón:</h5>
+                  <p>Tolva Minera, Multipropósito, Borde Alto.</p>
+                </div>
+                <div class="col-auto">
+                  <a href="assets/pdf_vagones/aridos.pdf" target="_blank"><button class="btn btn-primary">Más info</button></a>
+                </div>
+              </div>
+            </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 mb-5">
-            <div class="card text-white mb-3">
+          <div class="col-lg-6 col-md-6 mb-5">
+            <div class="card text-white">
               <img src="assets/img/productos/forestales.png">
               <div class="card-img-overlay d-flex flex-column">
-                <h4 class="card-title mt-auto">Forestales</h4>
+                <h2 class="card-title mt-auto">Forestales</h2>
+                <h5>Rollizos (precio aforado), Madera aserrada, Pasta celulósica, Tableros MDF, Bobinas de papel.</h5>
               </div>
             </div>
-            <p>Rollizos (precio aforado), Madera aserrada, Pasta celulósica, Tableros MDF, Bobinas de papel.</p>
-            <p><b>Vagón:</b> Borde alto, plataforma con estaquera, cubierto o contenedor interno (según necesidad).</p>
-            <img src="assets/img/productos/borde-alto.png" alt="" class="img-fluid my-4">
-            <a href="assets/pdf_vagones/forestales.pdf" target="_blank"><button class="btn btn-primary">Más información</button></a>
+            <div class="card-box">
+              <img src="assets/img/productos/borde-alto.png" alt="" class="img-fluid my-4">
+              <div class="row justify-content-between align-items-center">
+                <div class="col-8 col-auto me-auto">
+                  <h5>Vagón:</h5>
+                  <p>Borde alto, plataforma con estaquera, cubierto o contenedor interno (según necesidad).</p>
+                </div>
+                <div class="col-auto">
+                  <a href="assets/pdf_vagones/forestales.pdf" target="_blank"><button class="btn btn-primary">Más info</button></a>
+                </div>
+              </div>
+            </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 mb-5">
-            <div class="card text-white mb-3">
+          <div class="col-lg-6 col-md-6 mb-5">
+            <div class="card text-white">
               <img src="assets/img/productos/consumo.png">
               <div class="card-img-overlay d-flex flex-column">
-                <h4 class="card-title mt-auto">Consumo</h4>
+                <h2 class="card-title mt-auto">Consumo</h2>
+                <h5>Azúcar, Cemento, Bebidas, Cerámicos, (Embolsados y palletizados), Otros.</h5>
               </div>
             </div>
-            <p>Azúcar, Cemento, Bebidas, Cerámicos, (Embolsados y palletizados), Otros.</p>
-            <p><b>Vagón:</b> Cubierto <br> * Aforo mínimo 30 toneladas. <br> ** Cantidad de pallets por vagón según tipo de carga.</p>
-            <img src="assets/img/productos/cubiertos.png" alt="" class="img-fluid my-4">
-            <a href="assets/pdf_vagones/consumo.pdf" target="_blank"><button class="btn btn-primary">Más información</button></a>
+            <div class="card-box">
+              <img src="assets/img/productos/cubiertos.png" alt="" class="img-fluid my-4">
+              <div class="row justify-content-between align-items-center">
+                <div class="col-8 col-auto me-auto">
+                  <h5>Vagón:</h5>
+                  <p>Cubierto. (Aforo mínimo 30 tonelada), <br> (Cantidad de pallets por vagón según tipo de carga.)</p>
+                </div>
+                <div class="col-auto">
+                  <a href="assets/pdf_vagones/consumo.pdf" target="_blank"><button class="btn btn-primary">Más info</button></a>
+                </div>
+              </div>
+            </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 mb-5">
-            <div class="card text-white mb-3">
+          <div class="col-lg-6 col-md-6 mb-5">
+            <div class="card text-white">
               <img src="assets/img/productos/contenedores.png">
               <div class="card-img-overlay d-flex flex-column">
-                <h4 class="card-title mt-auto">Contenedores</h4>
+                <h2 class="card-title mt-auto">Contenedores</h2>
+                <h5>Comercio internacional. Ingreso directo a Puerto de Buenos Aires. (TRP - T4) y Puerto de Rosario. Otras terminales con servicio de punta camión.</h5>
               </div>
             </div>
-            <p>Comercio internacional. Ingreso directo a Puerto de Buenos Aires. (TRP - T4) y Puerto de Rosario. Otras terminales con servicio de punta camión.</p>
-            <p><b>Vagón:</b> Portacontenedor.</p>
-            <img src="assets/img/productos/porta-contenedores.png" alt="" class="img-fluid my-4">
-            <a href="assets/pdf_vagones/contenedores.pdf" target="_blank"><button class="btn btn-primary">Más información</button></a>
+            <div class="card-box">
+              <img src="assets/img/productos/porta-contenedores.png" alt="" class="img-fluid my-4">
+              <div class="row justify-content-between align-items-center">
+                <div class="col-8 col-auto me-auto">
+                  <h5>Vagón:</h5>
+                  <p>Portacontenedor.</p>
+                </div>
+                <div class="col-auto">
+                  <a href="assets/pdf_vagones/contenedores.pdf" target="_blank"><button class="btn btn-primary">Más info</button></a>
+                </div>
+              </div>
+            </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 mb-5">
-            <div class="card text-white mb-3">
+          <div class="col-lg-6 col-md-6 mb-5">
+            <div class="card text-white">
               <img src="assets/img/productos/cargas-generales.png">
               <div class="card-img-overlay d-flex flex-column">
-                <h4 class="card-title mt-auto">Cargas Generales</h4>
+                <h2 class="card-title mt-auto">Cargas Generales</h2>
+                <h5>Materiales Varios, Minerales, Chatarra, Otros</h5>
               </div>
             </div>
-            <p>Materiales Varios, Minerales, Chatarra, Otros</p>
-            <p><b>Vagón:</b> Cubierto, borde alto o bajo (según necesidad). <br> * Aforo mínimo 30 toneladas</p>
-            <img src="assets/img/productos/graneros.png" alt="" class="img-fluid my-4">
-            <a href="assets/pdf_vagones/generales.pdf" target="_blank"><button class="btn btn-primary">Más información</button></a>
+            <div class="card-box">
+              <img src="assets/img/productos/graneros.png" alt="" class="img-fluid my-4">
+              <div class="row justify-content-between align-items-center">
+                <div class="col-8 col-auto me-auto">
+                  <h5>Vagón:</h5>
+                  <p>Cubierto, borde alto o bajo (según necesidad). <br> * Aforo mínimo 30 toneladas</p>
+                </div>
+                <div class="col-auto">
+                  <a href="assets/pdf_vagones/generales.pdf" target="_blank"><button class="btn btn-primary">Más info</button></a>
+                </div>
+              </div>
+            </div>
           </div>
 
         </div>
@@ -188,7 +248,7 @@
             </ul>
           </div>
 
-          <div class="col-lg-4 col-md-4 ms-auto footer-links">
+          <div class="col-lg-6 col-md-4 ms-auto footer-links">
             <ul>
               <li>Santa Fe 4636, C.A.B.A, Argentina, C1425BHV</li>
               <li>+54 (11) 6091-8000</li>

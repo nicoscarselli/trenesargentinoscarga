@@ -531,6 +531,8 @@ hr {
 
   #hero .btn-contacto {
     display: block;
+    font-size: 13px;
+    padding: 12px 24px;
   }
   
 }

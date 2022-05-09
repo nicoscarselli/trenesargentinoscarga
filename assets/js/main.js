@@ -143,8 +143,8 @@
       if (navbar.classList.contains('navbar-mobile')) {
         navbar.classList.remove('navbar-mobile')
         let navbarToggle = select('.mobile-nav-toggle')
-        navbarToggle.classList.toggle('bi-list')
-        navbarToggle.classList.toggle('bi-x')
+        navbarToggle.classList.toggle('fa-solid fa-xmark')
+        navbarToggle.classList.toggle('fa-solid fa-xmark')
       }
       scrollto(this.hash)
     }

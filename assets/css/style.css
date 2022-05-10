@@ -216,10 +216,10 @@ hr {
 # Top Bar
 --------------------------------------------------------------*/
 #topbar {
-  background: transparent;
+  background: rgba(0, 0, 0, 0.5);
   border-bottom: 0.5px solid var(--celeste);
   height: 44px;
-  font-size: 16px;
+  font-size: 14px;
   z-index: 996;
   color: var(--white);
   transition: all 0.5s;
@@ -292,7 +292,7 @@ hr {
   padding: 8px 24px;
   white-space: nowrap;
   transition: 0.3s;
-  font-size: 19px;
+  font-size: 16px;
   font-weight: bold;
   display: inline-block;
 }
@@ -344,7 +344,7 @@ hr {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: bold;
   color: var(--white);
   white-space: nowrap;
@@ -441,7 +441,7 @@ hr {
   position: relative;
   background-color: var(--dark);
   overflow: hidden;
-  margin-bottom: -200px;
+  margin-bottom: -180px;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
 }
 
@@ -488,7 +488,6 @@ hr {
   font-family: var(--font-title);
   font-size: 20px;
   font-weight: bold;
-  margin-top: 30px;
   padding: 16px 36px;
   text-transform: uppercase;
   transition: 0.5s;

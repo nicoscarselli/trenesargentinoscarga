@@ -70,8 +70,8 @@
   --dark-grey: #aaaaaa;
   --light-grey: #e7e7e7;
   --celeste: #37bbed;
-  --font-title: 'Gotham';
-  --font-text: 'Gotham';
+  --font-title: 'Encode Sans';
+  --font-text: 'Roboto';
   scroll-behavior: smooth;
 }
 
@@ -120,13 +120,7 @@ h5,
 h6 {
   font-family: var(--font-title) !important;
   font-weight: bold !important;
-  letter-spacing: -1px;
   margin: 0.4em 0 0.4em 0 !important;
-}
-
-h1,
-h2 {
-  text-transform: uppercase;
 }
 
 .font-normal {
@@ -217,7 +211,6 @@ hr {
 --------------------------------------------------------------*/
 #topbar {
   background: rgba(0, 0, 0, 0.5);
-  border-bottom: 0.5px solid var(--celeste);
   height: 44px;
   font-size: 14px;
   z-index: 996;
@@ -441,8 +434,8 @@ hr {
   position: relative;
   background-color: var(--dark);
   overflow: hidden;
-  margin-bottom: -180px;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+  margin-bottom: -138px;
+  box-shadow: rgba(0, 0, 0, 0.50) 0px 25px 50px -12px;
 }
 
 #hero video {

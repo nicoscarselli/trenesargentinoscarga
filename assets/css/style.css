@@ -1,28 +1,4 @@
 @font-face {
-  font-family: 'Gotham';
-  src: url('../fonts/Gotham-Book.eot');
-  src: url('../fonts/Gotham-Book.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/Gotham-Book.woff2') format('woff2'),
-    url('../fonts/Gotham-Book.woff') format('woff'),
-    url('../fonts/Gotham-Book.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Gotham';
-  src: url('../fonts/Gotham-Bold.eot');
-  src: url('../fonts/Gotham-Bold.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/Gotham-Bold.woff2') format('woff2'),
-    url('../fonts/Gotham-Bold.woff') format('woff'),
-    url('../fonts/Gotham-Bold.ttf') format('truetype');
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
   font-family: 'Roboto';
   src: url('../fonts/Roboto-Regular.eot');
   src: url('../fonts/Roboto-Regular.eot?#iefix') format('embedded-opentype'),
@@ -112,19 +88,20 @@ a:hover {
   text-decoration: none !important;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+.h1, h1,
+.h2, h2,
+.h3, h3,
+.h4, h4,
+.h5, h5,
+.h6, h6 {
   font-family: var(--font-title) !important;
   font-weight: bold !important;
   margin: 0.4em 0 0.4em 0 !important;
+  line-height: 1.5;
 }
 
 .font-normal {
-  font-weight: normal !important;
+  font-weight: 600 !important;
 }
 
 hr {
@@ -162,11 +139,15 @@ hr {
 }
 
 .bg-grey {
-  background-color: var(--light-grey);
+  background-color: var(--light-grey) !important;
+}
+
+.bg-dark-grey {
+  background-color: var(--dark-grey) !important;
 }
 
 .bg-dark {
-  background-color: var(--dark);
+  background-color: var(--dark) !important;
 }
 
 /*--------------------------------------------------------------
@@ -728,15 +709,23 @@ article .overlap {
 }
 
 .card-img-overlay {
+  background: rgba(0, 0, 0, 0.3);
   text-align: center;
-  padding: 16px !important;
-  border-radius: 10px !important;
+  padding: 24px !important;
+  border-radius: 20px !important;
+}
+
+.card img {
+
+  border-radius: 20px !important;
 }
 
 .card-box {
-  background-color: var(--light-grey);
+  background-color: var(--white);
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   border-radius: 20px;
-  padding: 24px;
+  padding: 66px 48px 24px 48px;
+  margin-top: -40px;
 }
 
 
@@ -790,8 +779,8 @@ footer {
 }
 
 #footer .footer-top .footer-links ul i {
-  padding-right: 2px;
-  color: var(--celeste);
+  padding-right: 10px;
+  color: var(--dark);
   font-size: 16px;
   line-height: 1;
 }
@@ -809,7 +798,6 @@ footer {
 #footer .footer-top .footer-links ul a {
   color: var(--dark);
   display: inline-block;
-  line-height: 1;
 }
 
 #footer .footer-top .footer-links ul a:hover {
@@ -824,7 +812,7 @@ footer {
 }
 
 #footer .social-links a {
-  font-size: 16px;
+  font-size: 18px;
   display: inline-block;
   color: var(--celeste);
   margin-right: 24px;

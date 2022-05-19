@@ -237,10 +237,6 @@ hr {
     padding-right: 4px;
     margin-left: 16px;
   }
-
-  .topbar_phone {
-    /*display: none;*/
-  }
 }
 
 #header {
@@ -274,7 +270,7 @@ hr {
   color: #fff;
   display: inline-block;
   font-family: var(--font-title);
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 600;
   margin-left: 25px;
   padding: 8px 24px;
@@ -330,7 +326,7 @@ hr {
   color: var(--white);
   display: flex;
   font-family: var(--font-title);
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 600;
   justify-content: space-between;
   padding: 0px 2px;

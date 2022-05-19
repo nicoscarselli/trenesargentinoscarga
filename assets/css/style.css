@@ -278,7 +278,7 @@ hr {
   white-space: nowrap;
 }
 
-.clientes-btn:hover {
+.clientes-btn:hover, .clientes-btn:focus, .clientes-btn:active {
   background: var(--white);
   color: var(--celeste);
 }
@@ -290,6 +290,7 @@ hr {
     font-size: 14px;
   }
 }
+
 
 /*--------------------------------------------------------------
 # Navigation Menu
@@ -424,7 +425,7 @@ hr {
   background-color: var(--dark);
   overflow: hidden;
   margin-bottom: -138px;
-  box-shadow: rgba(0, 0, 0, 0.50) 0px 25px 50px -12px;
+  box-shadow: rgba(55, 187, 237, 0.4) 0px 20px, rgba(55, 187, 237, 0.3) 0px 40px, rgba(55, 187, 237, 0.2) 0px 60px, rgba(55, 187, 237, 0.1) 0px 80px, rgba(55, 187, 237, 0.05) 0px 100px;
 }
 
 #hero video {
@@ -448,11 +449,11 @@ hr {
   left: 0;
   height: 100%;
   width: 100%;
-  background: rgb(80,83,92);
-  background: -moz-linear-gradient(0deg, rgba(80,83,92,0) 0%, rgba(80,83,92,.7) 100%);
-  background: -webkit-linear-gradient(0deg, rgba(80,83,92,0) 0%, rgba(80,83,92,.7) 100%);
-  background: linear-gradient(0deg, rgba(80,83,92,0) 0%, rgba(80,83,92,.7) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#50535c",endColorstr="#50535c",GradientType=1);
+  background: rgb(55,187,237);
+  background: -moz-linear-gradient(0deg, rgba(55,187,237,0.2) 0%, rgba(80,83,92,0.5) 50%);
+  background: -webkit-linear-gradient(0deg, rgba(55,187,237,0.2) 0%, rgba(80,83,92,0.5) 50%);
+  background: linear-gradient(0deg, rgba(55,187,237,0.2) 0%, rgba(80,83,92,0.5) 50%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#37bbed",endColorstr="#50535c",GradientType=1);
   z-index: 1;
 }
 
@@ -566,6 +567,7 @@ section {
   border-radius: 24px;
   height: 300px;
   transition: .3s;
+  z-index: 3;
 }
 
 .panel-hover-overlay {
@@ -597,7 +599,12 @@ section {
   transform: translateY(-50%);
   text-align: center;
   z-index: 99;
-  padding: 24px;
+  padding: 24px 48px;
+}
+
+.panel-hover .panel-hover-title {
+  font-weight: 600 !important;
+  line-height: 1.1;
 }
 
 .panel-hover a {
@@ -609,7 +616,7 @@ section {
 }
 
 .panel-hover:hover img {
-  width: 150%;
+  width: 120%;
 }
 
 .panel-hover:hover::after {

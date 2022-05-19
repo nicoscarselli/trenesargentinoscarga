@@ -228,8 +228,18 @@ hr {
 }
 
 @media (max-width: 768px) {
+  #topbar {
+    height: 40px;
+    font-size: 12px;
+  }
+
+  #topbar .contact-info i {
+    padding-right: 4px;
+    margin-left: 16px;
+  }
+
   .topbar_phone {
-    display: none;
+    /*display: none;*/
   }
 }
 
@@ -413,7 +423,7 @@ hr {
 --------------------------------------------------------------*/
 #hero {
   width: 100%;
-  height: 90vh;
+  height: 80vh;
   position: relative;
   background-color: var(--dark);
   overflow: hidden;
@@ -463,7 +473,7 @@ hr {
   display: inline-block;
   font-family: var(--font-title);
   font-size: 20px;
-  font-weight: bold;
+  font-weight: 600;
   padding: 16px 36px;
   text-transform: uppercase;
   transition: 0.5s;
@@ -473,6 +483,10 @@ hr {
   background: var(--dark);
   box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
   transform: scale(1.15);
+}
+
+#hero .title_box {
+  width: 75%;
 }
 
 #hero h1 {
@@ -488,20 +502,47 @@ hr {
     background-attachment: fixed;
   }
 
+  #hero .title_box {
+    width: 50%;
+  }
+
   #hero h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
 }
 
 @media (max-width: 768px) {
+  #hero h1 {
+    font-size: 2.5rem;
+  }
+
+  #hero .title_box {
+    width: 100%;
+  }
+
   #hero {
     height: 550px;
-    margin-bottom: 0px;
+    margin-bottom: -150px;
+  }
+
+  #hero .btn-contacto {
+    font-size: 16px;
+    padding: 12px 24px;
+  }
+}
+
+@media (max-width: 575.98px) { 
+  #hero {
+    height: 550px;
+    margin-bottom: -120px;
+  }
+
+  #hero .title_box {
+    width: 100%;
   }
 
   #hero h1 {
-    font-size: 28px;
-    line-height: 32px;
+    font-size: 2rem;
   }
 
   #hero .btn-contacto {
@@ -509,33 +550,7 @@ hr {
     font-size: 13px;
     padding: 12px 24px;
   }
-  
-}
-
-@-webkit-keyframes pulsate-btn {
-  0% {
-    transform: scale(0.6, 0.6);
-    opacity: 1;
-  }
-
-  100% {
-    transform: scale(1, 1);
-    opacity: 0;
-  }
-}
-
-@keyframes pulsate-btn {
-  0% {
-    transform: scale(0.6, 0.6);
-    opacity: 1;
-  }
-
-  100% {
-    transform: scale(1, 1);
-    opacity: 0;
-  }
-}
-
+ }
 
 /*--------------------------------------------------------------
 # Sections General
@@ -545,19 +560,9 @@ section {
   overflow: hidden !important;
 }
 
-.inner-page {
-  margin-top: 150px;
-}
-
-@media (max-width: 768px) {
-  .inner-page {
-    margin-top: 100px;
-  }
-}
-
 
 /*--------------------------------------------------------------
-# Sections General
+# Panels
 --------------------------------------------------------------*/
 .panel-hover {
   overflow: hidden;
@@ -646,6 +651,26 @@ time {
     height: 300px;
   }
 }
+
+@media (max-width: 768px) {
+  .panel-hover {
+    height: 200px;
+  }
+
+  .panel-hover-title {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 575.98px) { 
+  .panel-hover-title {
+    font-size: 28px;
+  }
+
+  .panel-hover {
+    height: 300px;
+  }
+ }
 
 
 /*--------------------------------------------------------------
@@ -808,7 +833,11 @@ footer {
 #footer .credits {
   padding-top: 5px;
   font-size: 13px;
-  color: #444444;
+  color: var(--dark);
+}
+
+#footer .credits a{
+  color: var(--celeste);
 }
 
 #footer .social-links a {

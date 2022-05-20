@@ -489,6 +489,7 @@ hr {
 #hero h1 {
   margin: 0 0 10px 0;
   font-size: 3.2rem;
+  font-weight: bold;
   line-height: 1.1;
   color: var(--white);
   text-transform: none;
@@ -500,7 +501,7 @@ hr {
   }
 
   #hero .title_box {
-    width: 50%;
+    width: 75%;
   }
 
   #hero h1 {
